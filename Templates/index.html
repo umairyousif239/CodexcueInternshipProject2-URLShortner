@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Url Shortener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>URL Shortener</title>
 </head>
 <body>
-    <h1>URL Shortener</h1>
-    <form method="post" action="{{url_for('index')}}">
-        <input type="url" name="original_url" placeholder="Enter the long URL:" required>
-        <button type="submit">Shorten</button>
-    </form>
+    <div class="wrapper">
+        <div class="mainTab">
+            <h1 class="Title">URL Shortener</h1>
+            <form method="post" action="{{url_for('index')}}" class="form">
+            <input type="url" name="original_url" placeholder="Enter the long URL:" required>
+            <button type="submit">Shorten</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>
